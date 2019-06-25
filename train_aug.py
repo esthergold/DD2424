@@ -299,7 +299,7 @@ def run_aug(args, save_every_epoch=False):
         model = torch.load(weights_path)
         return model
 
-    MODEL_name = "{}/BertForMaskedLM_aug{}_epoch_3".format(task_name.lower(), task_name.lower())
+    MODEL_name = "{}/BertForMaskedLM_{}_epoch_10".format(task_name.lower(), task_name.lower())
     model = load_model(MODEL_name)
     model.cuda()
 
